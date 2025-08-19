@@ -1,0 +1,4 @@
+chart: test-app-1
+namespace: test-app-1
+  values:
+    image: registry.redhat.io/ubi8/httpd-24:latest
