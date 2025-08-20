@@ -1,6 +1,19 @@
-- chart: test-app-1
-  namespace: test-app-1
+charts:
+  - chart: test-app-1
+    namespace: test-app-1
+    values_path: values/test-app-1.yaml
+    #helm_values:
+    #  image: registry.redhat.io/ubi8/httpd-24:latest
+  - chart: test-app-2
+    namespace: test-app-2
+    values_path: values/test-app-2.yaml
+    #helm_values:
+    #  image: registry.redhat.io/ubi8/httpd-24:latest
+
+
+#- chart: test-app-1
+#  namespace: test-app-1
   #image: registry.redhat.io/ubi8/httpd-24:latest
-- chart: test-app-2
-  namespace: test-app-2
+#- chart: test-app-2
+#  namespace: test-app-2
   #image: registry.redhat.io/ubi8/httpd-24:latest
