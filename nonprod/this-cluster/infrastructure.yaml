@@ -28,4 +28,4 @@ infrastructure:
       region: ap-southeast-2
       csv: oadp-operator.v1.5.0
       roleArn: arn:aws:iam::131763327693:role/this-cluster-openshift-oadp-operator
-      bucketname: aap-backups
+      #bucketname: aap-backups
