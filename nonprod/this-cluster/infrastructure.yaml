@@ -16,7 +16,7 @@ infrastructure:
     values:
       #csv: aws-efs-csi-driver-operator.v4.19.0-202507291138
       csv: aws-efs-csi-driver-operator.v4.19.0-202507161208
-      roleArn: arn:aws:iam::131763327693:role/this-cluster-rosa-efs-csi-role
+      roleArn: arn:aws:iam::935329747841:role/this-cluster-rosa-efs-csi-role
       fileSystemId: fs-0fe56b903ed2dcc2e
   - chart: openshift-cluster-config
     namespace:
@@ -27,5 +27,5 @@ infrastructure:
       clustername: this-cluster
       region: ap-southeast-2
       csv: oadp-operator.v1.5.0
-      roleArn: arn:aws:iam::131763327693:role/this-cluster-openshift-oadp-operator
+      roleArn: arn:aws:iam::935329747841:role/this-cluster-openshift-oadp-operator
       bucketname: aap-backups
