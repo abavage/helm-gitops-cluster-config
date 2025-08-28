@@ -10,7 +10,7 @@ infrastructure:
   - chart: openshift-aap
     namespace: aap
     values:
-      csv: aap-operator.v2.5.0-0.1753900156
+      csv: aap-operator.v2.5.0-0.1755835086
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
     values:
