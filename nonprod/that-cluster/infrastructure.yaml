@@ -6,6 +6,7 @@ infrastructure:
       roleArn: arn:aws:iam::677276117645:role/that-cluster-external-secret-store-test-app
       region: ap-southeast-2
       clustername: that-cluster
+      awsSecretStore: that-cluster-test-app-secrets
   - chart: openshift-logging
     namespace: openshift-logging
     values:
