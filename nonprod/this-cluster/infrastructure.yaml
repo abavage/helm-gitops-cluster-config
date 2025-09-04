@@ -35,4 +35,5 @@ infrastructure:
     values:
       channel: tech-preview-v0.1
       csv: external-secrets-operator.v0.1.0
+      clustername: this-cluster
       #roleArn: arn:aws:iam::339712895890:role/this-cluster-external-secret-operator
