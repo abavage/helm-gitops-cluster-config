@@ -7,6 +7,7 @@ infrastructure:
       region: ap-southeast-2
       clustername: that-cluster
       awsSecretStore: that-cluster-test-app-secrets
+      awsSecretStoreProperty: rosa_api_token
   - chart: openshift-logging
     namespace: openshift-logging
     values:
