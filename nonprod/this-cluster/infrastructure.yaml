@@ -5,6 +5,7 @@ infrastructure:
       image: registry.redhat.io/rhel10/httpd-24:latest
       roleArn: arn:aws:iam::339712895890:role/this-cluster-external-secret-store-test-app
       region: ap-southeast-2
+      clustername: this-cluster
   - chart: openshift-logging
     namespace: openshift-logging
     values:
@@ -35,5 +36,4 @@ infrastructure:
     values:
       channel: tech-preview-v0.1
       csv: external-secrets-operator.v0.1.0
-      clustername: this-cluster
       #roleArn: arn:aws:iam::339712895890:role/this-cluster-external-secret-operator
