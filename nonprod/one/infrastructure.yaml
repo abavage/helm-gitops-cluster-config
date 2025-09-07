@@ -3,10 +3,10 @@ infrastructure:
     namespace: test-app
     values:
       image: registry.redhat.io/rhel10/httpd-24:latest
-      roleArn: arn:aws:iam::677276117645:role/that-cluster-external-secret-store-test-app
+      roleArn: arn:aws:iam::913524947756:role/one-external-secret-store-test-app
       region: ap-southeast-2
-      clustername: that-cluster
-      awsSecretStore: that-cluster-test-app-secrets
+      clustername: one
+      awsSecretStore: one-test-app-secrets
       awsSecretStoreProperty: rosa_api_token
   - chart: openshift-logging
     namespace: openshift-logging
@@ -20,7 +20,7 @@ infrastructure:
     namespace: openshift-cluster-csi-drivers
     values:
       csv: aws-efs-csi-driver-operator.v4.19.0-202507161208
-      roleArn: arn:aws:iam::677276117645:role/that-cluster-rosa-efs-csi-role
+      roleArn: arn:aws:iam::913524947756:role/one-rosa-efs-csi-role
       fileSystemId: fs-0b89531734b9a5baa
   - chart: openshift-cluster-config
     namespace:
@@ -28,14 +28,14 @@ infrastructure:
   - chart: openshift-oadp
     namespace: openshift-adp
     values:
-      clustername: that-cluster
+      clustername: one
       region: ap-southeast-2
       csv: oadp-operator.v1.5.0
-      roleArn: arn:aws:iam::677276117645:role/that-cluster-openshift-oadp-operator
+      roleArn: arn:aws:iam::913524947756:role/one-openshift-oadp-operator
       bucketname: aap-backups
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
     values:
       channel: tech-preview-v0.1
       csv: external-secrets-operator.v0.1.0
-      #roleArn: arn:aws:iam::677276117645:role/that-cluster-external-secret-operator
+      #roleArn: arn:aws:iam::913524947756:role/one-external-secret-operator
