@@ -21,7 +21,7 @@ infrastructure:
     values:
       csv: aws-efs-csi-driver-operator.v4.19.0-202507161208
       roleArn: arn:aws:iam::913524947756:role/one-rosa-efs-csi-role
-      fileSystemId: fs-0b89531734b9a5baa
+      fileSystemId: fs-0cb20d873e3b0fe7d
   - chart: openshift-cluster-config
     namespace:
     values:
