@@ -25,6 +25,9 @@ infrastructure:
   - chart: openshift-cluster-config
     namespace:
     values:
+      custom_label:
+        key: platform.cenitex.vic
+        value: default
   - chart: openshift-oadp
     namespace: openshift-adp
     values:
