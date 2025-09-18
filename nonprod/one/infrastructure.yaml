@@ -11,7 +11,7 @@ infrastructure:
   - chart: openshift-logging
     namespace: openshift-logging
     values:
-      csv: cluster-logging.v6.3.0
+      csv: cluster-logging.v6.3.1
   - chart: openshift-aap
     namespace: aap
     values:
@@ -19,7 +19,7 @@ infrastructure:
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
     values:
-      csv: aws-efs-csi-driver-operator.v4.19.0-202509030024
+      csv: aws-efs-csi-driver-operator.v4.19.0-202509091807
       roleArn: arn:aws:iam::235494778649:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-cluster-config
