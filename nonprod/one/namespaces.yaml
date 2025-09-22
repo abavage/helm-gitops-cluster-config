@@ -1,13 +1,10 @@
 namespaces:
   - namespace: one
     values:
-      namespace:
-        name: one
+      namespace: one
   - namespace: two
     values:
-      namespace:
-        name: two
+      namespace: two
   - namespace: three
     values:
-      namespace:
-        name: three
+      namespace: three
