@@ -11,6 +11,21 @@ namespaces:
         limits_memory: 8Gi
         requests_cpu: 4
         requests_memory: 4Gi
+      limitrange:
+        conatiner:
+          default:
+            cpu: 500m
+            memory: 512Mi
+        defaultRequest:
+          cpu: 125m
+          memory: 128Mi
+        max:
+          cpu: 1000m
+          memory: 1024Mi
+        pod:
+          max:
+            cpu: 1000m
+            memory: 4096Mi
 
   - name: namespace-two 
     namespace: two
@@ -24,6 +39,21 @@ namespaces:
         limits_memory: 8Gi
         requests_cpu: 4
         requests_memory: 4Gi
+      limitrange:
+        conatiner:
+          default:
+            cpu: 500m
+            memory: 512Mi
+        defaultRequest:
+          cpu: 125m
+          memory: 128Mi
+        max:
+          cpu: 1000m
+          memory: 1024Mi
+        pod:
+          max:
+            cpu: 1000m
+            memory: 4096Mi
 
   - name: namespace-three
     namespace: three
@@ -37,3 +67,18 @@ namespaces:
         limits_memory: 8Gi
         requests_cpu: 4
         requests_memory: 4Gi
+      limitrange:
+        conatiner:
+          default:
+            cpu: 500m
+            memory: 512Mi
+        defaultRequest:
+          cpu: 125m
+          memory: 128Mi
+        max:
+          cpu: 1000m
+          memory: 1024Mi
+        pod:
+          max:
+            cpu: 1000m
+            memory: 4096Mi
