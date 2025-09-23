@@ -12,7 +12,7 @@ namespaces:
         requests_cpu: 4
         requests_memory: 4Gi
       limitrange:
-        conatiner:
+        container:
           default:
             cpu: 500m
             memory: 512Mi
@@ -40,7 +40,7 @@ namespaces:
         requests_cpu: 4
         requests_memory: 4Gi
       limitrange:
-        conatiner:
+        container:
           default:
             cpu: 500m
             memory: 512Mi
@@ -68,7 +68,7 @@ namespaces:
         requests_cpu: 4
         requests_memory: 4Gi
       limitrange:
-        conatiner:
+        container:
           default:
             cpu: 500m
             memory: 512Mi
