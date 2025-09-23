@@ -16,12 +16,12 @@ namespaces:
           default:
             cpu: 500m
             memory: 512Mi
-        defaultRequest:
-          cpu: 125m
-          memory: 128Mi
-        max:
-          cpu: 1000m
-          memory: 1024Mi
+          defaultRequest:
+            cpu: 125m
+            memory: 128Mi
+          max:
+            cpu: 1000m
+            memory: 1024Mi
         pod:
           max:
             cpu: 1000m
@@ -44,12 +44,12 @@ namespaces:
           default:
             cpu: 500m
             memory: 512Mi
-        defaultRequest:
-          cpu: 125m
-          memory: 128Mi
-        max:
-          cpu: 1000m
-          memory: 1024Mi
+          defaultRequest:
+            cpu: 125m
+            memory: 128Mi
+          max:
+            cpu: 1000m
+            memory: 1024Mi
         pod:
           max:
             cpu: 1000m
@@ -72,12 +72,12 @@ namespaces:
           default:
             cpu: 500m
             memory: 512Mi
-        defaultRequest:
-          cpu: 125m
-          memory: 128Mi
-        max:
-          cpu: 1000m
-          memory: 1024Mi
+          defaultRequest:
+            cpu: 125m
+            memory: 128Mi
+          max:
+            cpu: 1000m
+            memory: 1024Mi
         pod:
           max:
             cpu: 1000m
