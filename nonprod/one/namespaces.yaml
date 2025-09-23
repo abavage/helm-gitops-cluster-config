@@ -6,6 +6,12 @@ namespaces:
       custom_label:
         key: platform.cenitex.vic
         value: default
+      resourcequota:
+        limits_cpu: 8
+        limits_memory: 8Gi
+        requests_cpu: 4
+        requests_memory: 4Gi
+
   - name: namespace-two 
     namespace: two
     values:
@@ -13,6 +19,12 @@ namespaces:
       custom_label:
         key: platform.cenitex.vic
         value: default
+      resourcequota:
+        limits_cpu: 8
+        limits_memory: 8Gi
+        requests_cpu: 4
+        requests_memory: 4Gi
+
   - name: namespace-three
     namespace: three
     values:
@@ -20,3 +32,8 @@ namespaces:
       custom_label:
         key: platform.cenitex.vic
         value: default
+      resourcequota:
+        limits_cpu: 8
+        limits_memory: 8Gi
+        requests_cpu: 4
+        requests_memory: 4Gi
