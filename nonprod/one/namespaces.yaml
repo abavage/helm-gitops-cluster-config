@@ -3,11 +3,20 @@ namespaces:
     namespace: one
     values:
       namespace: one
+      custom_label:
+        key: platform.cenitex.vic
+        value: default
   - name: namespace-two 
     namespace: two
     values:
       namespace: two
+      custom_label:
+        key: platform.cenitex.vic
+        value: default
   - name: namespace-three
     namespace: three
     values:
       namespace: three
+      custom_label:
+        key: platform.cenitex.vic
+        value: default
