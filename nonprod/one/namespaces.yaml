@@ -1,13 +1,13 @@
 namespaces:
-  - chart: namespace-one
+  - name: namespace-one
     namespace: one
     values:
       namespace: one
-  - chart: namespace-two 
+  - name: namespace-two 
     namespace: two
     values:
       namespace: two
-  - chart: namespace-three
+  - name: namespace-three
     namespace: three
     values:
       namespace: three
