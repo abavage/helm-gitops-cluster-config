@@ -4,7 +4,7 @@ namespaces:
     values:
       namespace: one
       custom_label:
-        key: platform.cenitex.vic
+        key: platform.openshift.io
         value: default
       resourcequota:
         limits_cpu: 8
@@ -32,7 +32,7 @@ namespaces:
     values:
       namespace: two
       custom_label:
-        key: platform.cenitex.vic
+        key: platform.openshift.io
         value: default
       resourcequota:
         limits_cpu: 8
@@ -60,7 +60,7 @@ namespaces:
     values:
       namespace: three
       custom_label:
-        key: platform.cenitex.vic
+        key: platform.openshift.io
         value: default
       resourcequota:
         limits_cpu: 8
