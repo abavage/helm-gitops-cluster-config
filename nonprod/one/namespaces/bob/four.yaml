@@ -6,9 +6,9 @@ custom_label:
   key: platform.openshift.io
   value: default
 resourcequota:
-  limits_cpu: 8
+  limits_cpu: 10
   limits_memory: 8Gi
-  requests_cpu: 4
+  requests_cpu: 8
   requests_memory: 4Gi
 limitrange:
   container:
