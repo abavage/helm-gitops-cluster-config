@@ -3,7 +3,7 @@ infrastructure:
     namespace: test-app
     values:
       image: registry.redhat.io/rhel10/httpd-24:latest
-      roleArn: arn:aws:iam::893424334611:role/one-external-secret-store-test-app
+      roleArn: arn:aws:iam::339320753047:role/one-external-secret-store-test-app
       region: ap-southeast-2
       clustername: one
       awsSecretStore: one-test-app-secrets
@@ -20,7 +20,7 @@ infrastructure:
     namespace: openshift-cluster-csi-drivers
     values:
       csv: aws-efs-csi-driver-operator.v4.19.0-202509151411
-      roleArn: arn:aws:iam::893424334611:role/one-rosa-efs-csi-role
+      roleArn: arn:aws:iam::339320753047:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-cluster-config
     namespace:
@@ -34,11 +34,11 @@ infrastructure:
       clustername: one
       region: ap-southeast-2
       csv: oadp-operator.v1.5.1
-      roleArn: arn:aws:iam::893424334611:role/one-openshift-oadp-operator
+      roleArn: arn:aws:iam::339320753047:role/one-openshift-oadp-operator
       bucketname: aap-backups
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
     values:
       channel: tech-preview-v0.1
       csv: external-secrets-operator.v0.1.0
-      #roleArn: arn:aws:iam::893424334611:role/one-external-secret-operator
+      #roleArn: arn:aws:iam::339320753047:role/one-external-secret-operator
