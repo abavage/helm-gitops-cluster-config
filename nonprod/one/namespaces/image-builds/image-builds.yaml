@@ -1,0 +1,27 @@
+name: image-builds
+namespace: image-builds
+#values:
+namespace: image-builds
+custom_label:
+  key: platform.openshift.io
+  value: default
+resourcequota:
+  limits_cpu: 10
+  limits_memory: 8Gi
+  requests_cpu: 8
+  requests_memory: 4Gi
+limitrange:
+  container:
+    default:
+      cpu: 500m
+      memory: 512Mi
+    defaultRequest:
+      cpu: 250m
+      memory: 256Mi
+    max:
+      cpu: 1000m
+      memory: 1024Mi
+  pod:
+    max:
+      cpu: 1000m
+      memory: 4096Mi
