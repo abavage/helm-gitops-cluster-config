@@ -1,7 +1,7 @@
 name: image-builds
 namespace: image-builds
 #values:
-namespace: image-builds
+#namespace: image-builds
 custom_label:
   key: platform.openshift.io
   value: default
