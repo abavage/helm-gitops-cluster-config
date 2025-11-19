@@ -16,6 +16,8 @@ infrastructure:
     namespace: aap
     values:
       csv: aap-operator.v2.5.0-0.1758147230
+      roleArn: arn:aws:iam::830786606030:role/one-aap-postgresql-database
+      region: ap-southeast-2
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
     values:
