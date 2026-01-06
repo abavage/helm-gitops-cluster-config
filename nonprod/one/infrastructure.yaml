@@ -11,20 +11,20 @@ infrastructure:
   - chart: openshift-logging
     namespace: openshift-logging
     values:
-      csv: cluster-logging.v6.3.1
+      csv: cluster-logging.v6.3.2
       clustername: one
       roleArn: arn:aws:iam::281359555390:role/one-siem-logging-cloudwatch-role
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
     values:
-      csv: aap-operator.v2.6.0-0.1763137334
+      csv: aap-operator.v2.6.0-0.1764966733
       roleArn: arn:aws:iam::281359555390:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
     values:
-      csv: aws-efs-csi-driver-operator.v4.19.0-202510081435
+      csv: aws-efs-csi-driver-operator.v4.19.0-202512031317
       roleArn: arn:aws:iam::281359555390:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-cluster-config
@@ -38,7 +38,7 @@ infrastructure:
     values:
       clustername: one
       region: ap-southeast-2
-      csv: oadp-operator.v1.5.2
+      csv: oadp-operator.v1.5.3
       roleArn: arn:aws:iam::281359555390:role/one-openshift-oadp-operator
       bucketname: aap-backups
   #- chart: openshift-pipelines
