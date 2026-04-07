@@ -50,10 +50,10 @@ infrastructure:
   #  namespace: openshift-pipelines
   #  values:
   #    csv: openshift-pipelines-operator-rh.v1.20.0
-  #- chart: openshift-external-secrets
-  #  namespace: external-secrets-operator
-  #  version: 0.0.1
-  #  values:
-  #    channel: tech-preview-v0.1
-  #    csv: external-secrets-operator.v0.1.0
-  #    roleArn: arn:aws:iam::047719629897:role/one-external-secret-operator
+  - chart: openshift-external-secrets
+    namespace: external-secrets-operator
+    version: 0.0.1
+    values:
+      channel: stable-v1.1
+      csv: openshift-external-secrets-operator.v1.1.0
+      roleArn: arn:aws:iam::047719629897:role/one-external-secret-operator
