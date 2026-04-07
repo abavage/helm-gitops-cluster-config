@@ -13,7 +13,7 @@ infrastructure:
     namespace: openshift-logging
     version: 0.0.1
     values:
-      csv: cluster-logging.v6.3.2
+      csv: cluster-logging.v6.3.4
       clustername: one
       roleArn: arn:aws:iam::047719629897:role/one-siem-logging-cloudwatch-role
       region: ap-southeast-2
@@ -21,7 +21,7 @@ infrastructure:
     namespace: aap
     version: 0.0.1
     values:
-      csv: aap-operator.v2.6.0-0.1764966733
+      csv: aap-operator.v2.6.0-0.1774648945
       roleArn: arn:aws:iam::047719629897:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-efs
