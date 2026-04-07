@@ -31,12 +31,13 @@ infrastructure:
       csv: aws-efs-csi-driver-operator.v4.19.0-202603250318
       roleArn: arn:aws:iam::047719629897:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
-  #- chart: openshift-cluster-config
-  #  namespace:
-  #  values:
-  #    custom_label:
-  #      key: platform.cenitex.vic
-  #      value: default
+  - chart: openshift-cluster-config
+    namespace:
+    version: 0.0.1
+    values:
+      custom_label:
+        key: rosa-custom
+        value: true
   #- chart: openshift-oadp
   #  namespace: openshift-adp
   #  values:
@@ -49,9 +50,10 @@ infrastructure:
   #  namespace: openshift-pipelines
   #  values:
   #    csv: openshift-pipelines-operator-rh.v1.20.0
-  #- chart: openshift-external-secrets
-  #  namespace: external-secrets-operator
-  #  values:
-  #    channel: tech-preview-v0.1
-  #    csv: external-secrets-operator.v0.1.0
-      #roleArn: arn:aws:iam::047719629897:role/one-external-secret-operator
+  - chart: openshift-external-secrets
+    namespace: external-secrets-operator
+    version: 0.0.1
+    values:
+      channel: tech-preview-v0.1
+      csv: external-secrets-operator.v0.1.0
+      roleArn: arn:aws:iam::047719629897:role/one-external-secret-operator
