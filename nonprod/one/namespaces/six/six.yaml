@@ -1,7 +1,8 @@
 name: namespace-six
 namespace: six
-#values:
-namespace: six
+admin_active_directory_group: this-group-here
+# viw is optional if its empty the rolebinding won't be created
+view_active_directory_group: this-is-view
 custom_label:
   key: platform.openshift.io
   value: default
