@@ -54,6 +54,6 @@ infrastructure:
     namespace: external-secrets-operator
     version: 0.0.11
     values:
-      channel: stable-v1.1
+      channel: tech-preview-v0.1
       csv: openshift-external-secrets-operator.v1.1.0
   #    roleArn: arn:aws:iam::047719629897:role/one-external-secret-operator
