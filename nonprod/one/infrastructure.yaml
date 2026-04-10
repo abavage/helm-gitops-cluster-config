@@ -52,7 +52,7 @@ infrastructure:
   #    csv: openshift-pipelines-operator-rh.v1.20.0
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
-    version: 0.0.13
+    version: 0.0.14
     values:
       channel: stable-v1
       csv: openshift-external-secrets-operator.v1.1.0
