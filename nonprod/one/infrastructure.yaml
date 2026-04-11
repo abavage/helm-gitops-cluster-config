@@ -17,13 +17,13 @@ infrastructure:
       clustername: one
       roleArn: arn:aws:iam::047719629897:role/one-siem-logging-cloudwatch-role
       region: ap-southeast-2
-  - chart: openshift-aap
-    namespace: aap
-    version: 0.0.3
-    values:
-      csv: aap-operator.v2.4.0-0.1749069319
-      roleArn: arn:aws:iam::047719629897:role/one-aap-postgresql-database
-      region: ap-southeast-2
+  #- chart: openshift-aap
+  #  namespace: aap
+  #  version: 0.0.4
+  #  values:
+  #    csv: aap-operator.v2.4.0-0.1749069319
+  #    roleArn: arn:aws:iam::047719629897:role/one-aap-postgresql-database
+  #    region: ap-southeast-2
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
     version: 0.0.1
