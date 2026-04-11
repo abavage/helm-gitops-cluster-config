@@ -28,7 +28,8 @@ infrastructure:
     namespace: openshift-cluster-csi-drivers
     version: 0.0.1
     values:
-      csv: aws-efs-csi-driver-operator.v4.20.0-202603110559
+      #csv: aws-efs-csi-driver-operator.v4.20.0-202603110559
+      csv: aws-efs-csi-driver-operator.v4.18.0-202604010244
       roleArn: arn:aws:iam::047719629897:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-cluster-config
