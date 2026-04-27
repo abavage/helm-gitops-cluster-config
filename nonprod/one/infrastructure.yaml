@@ -21,7 +21,8 @@ infrastructure:
     namespace: aap
     version: 0.0.6
     values:
-      csv: aap-operator.v2.4.0-0.1749069319
+      #csv: aap-operator.v2.4.0-0.1749069319
+      csv: aap-operator.v2.5.0-0.1774618015
       roleArn: arn:aws:iam::664418987929:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-efs
