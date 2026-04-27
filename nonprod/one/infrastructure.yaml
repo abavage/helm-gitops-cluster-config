@@ -19,7 +19,7 @@ infrastructure:
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
-    version: 0.0.9
+    version: 0.0.10
     values:
       csv: aap-operator.v2.4.0-0.1749069319
       #csv: aap-operator.v2.5.0-0.1774618015
