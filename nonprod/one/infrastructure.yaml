@@ -19,7 +19,7 @@ infrastructure:
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
-    version: 0.0.11
+    version: 0.0.13
     values:
       csv: aap-operator.v2.4.0-0.1749069319
       #csv: aap-operator.v2.5.0-0.1774618015
@@ -61,7 +61,7 @@ infrastructure:
   #    roleArn: arn:aws:iam::664418987929:role/one-external-secret-operator
   - chart: cluster-monitoring
     namespace: openshift-monitoring
-    version: 0.0.5
+    version: 0.0.6
     values:
       region: ap-southeast-2
       roleArn: arn:aws:iam::664418987929:role/one-rosa-monitoring-sns-role
