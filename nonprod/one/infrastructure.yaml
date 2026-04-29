@@ -61,7 +61,7 @@ infrastructure:
   #    roleArn: arn:aws:iam::664418987929:role/one-external-secret-operator
   - chart: cluster-monitoring
     namespace: openshift-monitoring
-    version: 0.0.6
+    version: 0.0.7
     values:
       region: ap-southeast-2
       roleArn: arn:aws:iam::664418987929:role/one-rosa-monitoring-sns-role
