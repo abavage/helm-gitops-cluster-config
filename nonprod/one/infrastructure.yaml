@@ -25,7 +25,7 @@ infrastructure:
       channel: stable-2.6
       csv: aap-operator.v2.4.0-0.1749069319
       #csv: aap-operator.v2.4.0-0.1777394675
-      #csv: aap-operator.v2.6.0-0.1777410689
+      csv: aap-operator.v2.6.0-0.1777410689
       roleArn: arn:aws:iam::664418987929:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-efs
