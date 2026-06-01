@@ -4,7 +4,7 @@ infrastructure:
     version: 0.0.5
     values:
       image: registry.redhat.io/rhel10/httpd-24:latest
-      roleArn: arn:aws:iam::982534389784:role/one-external-secret-store-test-app
+      roleArn: arn:aws:iam::879381249085:role/one-external-secret-store-test-app
       region: ap-southeast-2
       clustername: one
       awsSecretStore: one-test-app-secrets
@@ -15,7 +15,7 @@ infrastructure:
     values:
       csv: cluster-logging.v6.3.4
       clustername: one
-      roleArn: arn:aws:iam::982534389784:role/one-siem-logging-cloudwatch-role
+      roleArn: arn:aws:iam::879381249085:role/one-siem-logging-cloudwatch-role
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
@@ -25,7 +25,7 @@ infrastructure:
       channel: stable-2.6
       #csv: aap-operator.v2.4.0-0.1749069319
       csv: aap-operator.v2.6.0-0.1777410689
-      roleArn: arn:aws:iam::982534389784:role/one-aap-postgresql-database
+      roleArn: arn:aws:iam::879381249085:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
@@ -33,7 +33,7 @@ infrastructure:
     values:
       #csv: aws-efs-csi-driver-operator.v4.20.0-202603110559
       csv: aws-efs-csi-driver-operator.v4.18.0-202604010244
-      roleArn: arn:aws:iam::982534389784:role/one-rosa-efs-csi-role
+      roleArn: arn:aws:iam::879381249085:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-cluster-config
     namespace:
@@ -42,14 +42,14 @@ infrastructure:
       custom_label:
         key: rosa-custom
         value: true
-  #- chart: openshift-oadp
-  #  namespace: openshift-adp
-  #  values:
-  #    clustername: one
-  #    region: ap-southeast-2
-  #    csv: oadp-operator.v1.5.3
-  #    roleArn: arn:aws:iam::982534389784:role/one-openshift-oadp-operator
-  #    bucketname: aap-backups
+  - chart: openshift-oadp
+    namespace: openshift-adp
+    values:
+      clustername: one
+      region: ap-southeast-2
+      csv: oadp-operator.v1.5.3
+      roleArn: arn:aws:iam::879381249085:role/one-openshift-oadp-operator
+      bucketname: aap-backups
   #- chart: openshift-pipelines
   #  namespace: openshift-pipelines
   #  values:
@@ -60,11 +60,11 @@ infrastructure:
     values:
       channel: stable-v1
       csv: openshift-external-secrets-operator.v1.1.0
-  #    roleArn: arn:aws:iam::982534389784:role/one-external-secret-operator
+  #    roleArn: arn:aws:iam::879381249085:role/one-external-secret-operator
   - chart: cluster-monitoring
     namespace: openshift-monitoring
     version: 0.0.18
     values:
       region: ap-southeast-2
-      roleArn: arn:aws:iam::982534389784:role/one-rosa-monitoring-sns-role
-      topicArn: arn:aws:sns:ap-southeast-2:982534389784:one-rosa-monitoring-sns-topic
+      roleArn: arn:aws:iam::879381249085:role/one-rosa-monitoring-sns-role
+      topicArn: arn:aws:sns:ap-southeast-2:879381249085:one-rosa-monitoring-sns-topic
