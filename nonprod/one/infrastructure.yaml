@@ -44,6 +44,7 @@ infrastructure:
         value: true
   - chart: openshift-oadp
     namespace: openshift-adp
+    version: 0.0.1
     values:
       clustername: one
       region: ap-southeast-2
