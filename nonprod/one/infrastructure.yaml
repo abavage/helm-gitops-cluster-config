@@ -35,13 +35,13 @@ infrastructure:
       csv: aws-efs-csi-driver-operator.v4.18.0-202604010244
       roleArn: arn:aws:iam::879381249085:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
-  - chart: openshift-cluster-config
-    namespace:
-    version: 0.0.1
-    values:
-      custom_label:
-        key: rosa-custom
-        value: true
+  #- chart: openshift-cluster-config
+  #  namespace:
+  #  version: 0.0.1
+  #  values:
+  #    custom_label:
+  #      key: rosa-custom
+  #      value: true
   - chart: openshift-oadp
     namespace: openshift-adp
     version: 0.0.1
