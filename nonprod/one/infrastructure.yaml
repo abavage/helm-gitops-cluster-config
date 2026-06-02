@@ -42,14 +42,14 @@ infrastructure:
       custom_label:
         key: rosa-custom
         value: true
-  #- chart: openshift-oadp
-  #  namespace: openshift-adp
-  #  values:
-  #    clustername: one
-  #    region: ap-southeast-2
-  #    csv: oadp-operator.v1.5.3
-  #    roleArn: arn:aws:iam::879381249085:role/one-openshift-oadp-operator
-  #    bucketname: aap-backups
+  - chart: openshift-oadp
+    namespace: openshift-adp
+    values:
+      clustername: one
+      region: ap-southeast-2
+      csv: oadp-operator.v1.4
+      roleArn: arn:aws:iam::879381249085:role/one-openshift-oadp-operator
+      bucketname: aap-backups
   #- chart: openshift-pipelines
   #  namespace: openshift-pipelines
   #  values:
