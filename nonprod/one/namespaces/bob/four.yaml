@@ -5,8 +5,8 @@ admin_active_directory_group: this-group-here
 view_active_directory_group: this-is-view
 #namespace: bob
 custom_label:
-  key: platform.openshift.io
-  value: default
+  key: ingress
+  value: apps
 resourcequota:
   limits_cpu: 10
   limits_memory: 8Gi
