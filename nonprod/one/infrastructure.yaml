@@ -19,7 +19,7 @@ infrastructure:
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
-    version: 0.0.19
+    version: 0.0.20
     values:
       #channel: stable-2.4
       channel: stable-2.6
