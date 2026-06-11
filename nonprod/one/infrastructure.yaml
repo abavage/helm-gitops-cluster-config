@@ -11,9 +11,9 @@ infrastructure:
       awsSecretStoreProperty: rosa_api_token
   - chart: openshift-logging
     namespace: openshift-logging
-    version: 0.0.1
+    version: 0.0.2
     values:
-      csv: cluster-logging.v6.3.4
+      csv: cluster-logging.v6.5.1
       clustername: one
       roleArn: arn:aws:iam::717279691229:role/one-siem-logging-cloudwatch-role
       region: ap-southeast-2
