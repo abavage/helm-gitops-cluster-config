@@ -70,7 +70,7 @@ infrastructure:
       topicArn: arn:aws:sns:ap-southeast-2:827027194846:one-rosa-monitoring-sns-topic
   - chart: amazon-cloudwatch-observability
     namespace: amazon-cloudwatch
-    version: 0.0.1
+    version: 0.0.2
     values:
       clusterName: one
       region: ap-southeast-2
