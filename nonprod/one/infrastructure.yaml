@@ -15,7 +15,7 @@ infrastructure:
     values:
       csv: cluster-logging.v6.5.1
       clustername: one
-      roleArn: arn:aws:iam::827027194846:role/one-siem-logging-cloudwatch-role
+      roleArn: arn:aws:iam::827027194846:role/one-logging-cloudwatch-role
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
