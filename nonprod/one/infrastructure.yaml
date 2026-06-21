@@ -68,7 +68,7 @@ infrastructure:
       region: ap-southeast-2
       roleArn: arn:aws:iam::827027194846:role/one-rosa-monitoring-sns-role
       topicArn: arn:aws:sns:ap-southeast-2:827027194846:one-rosa-monitoring-sns-topic
-  - chart: cloudwatch-agent
+  - chart: amazon-cloudwatch-observability
     namespace: cloudwatch-agent
     version: 0.0.1
     values:
