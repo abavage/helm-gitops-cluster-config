@@ -69,7 +69,7 @@ infrastructure:
       roleArn: arn:aws:iam::827027194846:role/one-rosa-monitoring-sns-role
       topicArn: arn:aws:sns:ap-southeast-2:827027194846:one-rosa-monitoring-sns-topic
   - chart: amazon-cloudwatch-observability
-    namespace: cloudwatch-agent
+    namespace: amazon-cloudwatch
     version: 0.0.1
     values:
       clusterName: one
