@@ -75,3 +75,12 @@ infrastructure:
       clusterName: one
       region: ap-southeast-2
       roleArn: arn:aws:iam::827027194846:role/one-logging-cloudwatch-role
+  - chart: overprovisioning
+    namespace: overprovisioning
+    version: 0.0.1
+    values:
+      replicas: 2
+      resources:
+        requests:
+          cpu: 100m
+          memory: 100Mi
