@@ -68,13 +68,13 @@ infrastructure:
       region: ap-southeast-2
       roleArn: arn:aws:iam::827027194846:role/one-rosa-monitoring-sns-role
       topicArn: arn:aws:sns:ap-southeast-2:827027194846:one-rosa-monitoring-sns-topic
-  - chart: amazon-cloudwatch-observability
-    namespace: amazon-cloudwatch
-    version: 0.0.3
-    values:
-      clusterName: one
-      region: ap-southeast-2
-      roleArn: arn:aws:iam::827027194846:role/one-logging-cloudwatch-role
+  #- chart: amazon-cloudwatch-observability
+  #  namespace: amazon-cloudwatch
+  #  version: 0.0.3
+  #  values:
+  #    clusterName: one
+  #    region: ap-southeast-2
+  #    roleArn: arn:aws:iam::827027194846:role/one-logging-cloudwatch-role
   - chart: overprovisioning
     namespace: overprovisioning
     version: 0.0.2
