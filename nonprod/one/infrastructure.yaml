@@ -36,7 +36,7 @@ infrastructure:
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-smb
     namespace: openshift-cluster-csi-drivers
-    version: 0.0.1
+    version: 0.0.2
     values:
       csv: smb-csi-driver-operator.v4.21.0-202606240914
   #- chart: openshift-cluster-config
