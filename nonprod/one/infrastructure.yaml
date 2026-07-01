@@ -52,6 +52,7 @@ infrastructure:
       bucketname: aap-backups
   - chart: openshift-pipelines
     namespace: openshift-pipelines
+    version: 0.0.1
     values:
       csv: openshift-pipelines-operator-rh.v1.20.0
   - chart: openshift-external-secrets
