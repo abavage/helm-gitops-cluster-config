@@ -54,7 +54,7 @@ infrastructure:
     namespace: openshift-pipelines
     version: 0.0.1
     values:
-      csv: openshift-pipelines-operator-rh.v1.20.0
+      csv: openshift-pipelines-operator-rh.v1.22.3
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
     version: 0.0.15
