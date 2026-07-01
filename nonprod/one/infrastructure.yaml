@@ -50,10 +50,10 @@ infrastructure:
       csv: oadp-operator.v1.5.5
       roleArn: arn:aws:iam::827027194846:role/one-openshift-oadp-operator
       bucketname: aap-backups
-  #- chart: openshift-pipelines
-  #  namespace: openshift-pipelines
-  #  values:
-  #    csv: openshift-pipelines-operator-rh.v1.20.0
+  - chart: openshift-pipelines
+    namespace: openshift-pipelines
+    values:
+      csv: openshift-pipelines-operator-rh.v1.20.0
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
     version: 0.0.15
