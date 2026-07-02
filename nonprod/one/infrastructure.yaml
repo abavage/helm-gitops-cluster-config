@@ -27,21 +27,23 @@ infrastructure:
       csv: aap-operator.v2.6.0-0.1777410689
       roleArn: arn:aws:iam::611093862211:role/one-aap-postgresql-database
       region: ap-southeast-2
-  #- chart: openshift-csi-common
-  #  namespace: openshift-cluster-csi-drivers
-  #  version: 0.0.1
-  #- chart: openshift-efs
-  #  namespace: openshift-cluster-csi-drivers
-  #  version: 0.0.7
-  #  values:
+  - chart: openshift-csi-common
+    namespace: openshift-cluster-csi-drivers
+    version: 0.0.1
+  - chart: openshift-efs
+    namespace: openshift-cluster-csi-drivers
+    version: 0.0.7
+    values:
   #    csv: aws-efs-csi-driver-operator.v4.21.0-202606241858
-  #    roleArn: arn:aws:iam::611093862211:role/one-rosa-efs-csi-role
+      csv: aws-efs-csi-driver-operator.v4.21.0-202606171954
+      roleArn: arn:aws:iam::611093862211:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
-  #- chart: openshift-smb
-  #  namespace: openshift-cluster-csi-drivers
-  #  version: 0.0.6
-  #  values:
+  - chart: openshift-smb
+    namespace: openshift-cluster-csi-drivers
+    version: 0.0.6
+    values:
   #    csv: smb-csi-driver-operator.v4.21.0-202606240914
+      csv: smb-csi-driver-operator.v4.21.0-202606152052
   #- chart: openshift-cluster-config
   #  namespace:
   #  version: 0.0.1
