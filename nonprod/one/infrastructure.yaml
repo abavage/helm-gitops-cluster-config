@@ -107,7 +107,7 @@ infrastructure:
     version: 0.0.14
     values:
       ingresscontroller:
-        - certificateCommonName: '*.apps.sandbox1467.opentlc.com'
+        - certificateCommonName: '*.sandbox1467.opentlc.com'
           domain: apps.sandbox1467.opentlc.com
           name: apps
           scope: External
