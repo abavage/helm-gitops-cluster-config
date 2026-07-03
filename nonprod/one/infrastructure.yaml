@@ -104,7 +104,7 @@ infrastructure:
       roleArn: arn:aws:iam::611093862211:role/one-cert-manager-operator
   - chart: openshift-ingress
     namespace: openshift-ingress
-    version: 0.0.10
+    version: 0.0.12
     values:
       ingresscontroller:
         - certificateCommonName: '*.apps.sandbox1467.opentlc.com'
