@@ -99,16 +99,15 @@ infrastructure:
     namespace: openshift-cert-manager-operator
     version: 0.0.6
     values:
-      #csv: cert-manager-operator.v1.19.0
       csv: cert-manager-operator.v1.20.0
       region: ap-southeast-2
       roleArn: arn:aws:iam::611093862211:role/one-cert-manager-operator
-  #- chart: openshift-ingress
-  #  namespace: openshift-ingress
-  #  version: 0.0.7
-  #  values:
-  #    ingresscontroller:
-  #      name: apps
-  #      scope: External
-  #      domain: apps.sandbox1467.opentlc.com
-  #      certificateCommonName: "*.apps.sandbox1467.opentlc.com"
+  - chart: openshift-ingress
+    namespace: openshift-ingress
+    version: 0.0.7
+    values:
+      ingresscontroller:
+        name: apps
+        scope: External
+        domain: apps.sandbox1467.opentlc.com
+        certificateCommonName: "*.apps.sandbox1467.opentlc.com"
