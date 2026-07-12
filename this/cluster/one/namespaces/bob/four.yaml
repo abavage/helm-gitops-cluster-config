@@ -1,0 +1,29 @@
+name: bob
+namespace: bob
+admin_active_directory_group: this-group-here
+# viw is optional if its empty the rolebinding won't be created
+view_active_directory_group: this-is-view
+#namespace: bob
+custom_label:
+  key: ingress
+  value: apps
+resourcequota:
+  limits_cpu: 10
+  limits_memory: 8Gi
+  requests_cpu: 8
+  requests_memory: 4Gi
+limitrange:
+  container:
+    default:
+      cpu: 500m
+      memory: 512Mi
+    defaultRequest:
+      cpu: 250m
+      memory: 256Mi
+    max:
+      cpu: 1000m
+      memory: 1024Mi
+  pod:
+    max:
+      cpu: 1000m
+      memory: 4096Mi
