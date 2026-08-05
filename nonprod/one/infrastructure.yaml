@@ -88,7 +88,7 @@ infrastructure:
   #    roleArn: arn:aws:iam::899824977872:role/one-logging-cloudwatch-role
   - chart: overprovisioning
     namespace: overprovisioning
-    version: 0.0.2
+    version: 0.0.3
     values:
       replicas: 2
       resources:
