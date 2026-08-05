@@ -118,7 +118,7 @@ infrastructure:
       #  certificateCommonName: "*.apps.sandbox1467.opentlc.com"
   - chart: openshift-autonode
     namepsace: openshift-autonode
-    version: 0.0.2
+    version: 0.0.3
     values:
       availabilityZone:
         aza: ap-southeast-2a
