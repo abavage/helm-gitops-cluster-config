@@ -107,8 +107,8 @@ infrastructure:
     version: 0.0.17
     values:
       ingresscontroller:
-        - certificateCommonName: '*.sandbox5423.opentlc.com'
-          domain: sandbox5423.opentlc.com
+        - certificateCommonName: '*.sandbox1483.opentlc.com'
+          domain: sandbox1483.opentlc.com
           name: apps
           scope: External
       #ingresscontroller:
@@ -116,3 +116,11 @@ infrastructure:
       #  scope: External
       #  domain: apps.sandbox1467.opentlc.com
       #  certificateCommonName: "*.apps.sandbox1467.opentlc.com"
+  - chart: openshift-autonode
+    namepsace: openshift-autonode
+    version: 0.0.2
+    values:
+      availabilityZone:
+        aza: ap-southeast-2a
+        azb: ap-southeast-2b
+        azc: ap-southeast-2c
