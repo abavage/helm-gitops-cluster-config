@@ -93,8 +93,8 @@ infrastructure:
       replicas: 2
       resources:
         requests:
-          cpu: 1000m
-          memory: 500Mi
+          cpu: 100m
+          memory: 50Mi
   - chart: certificate-manager
     namespace: openshift-cert-manager-operator
     version: 0.0.8
