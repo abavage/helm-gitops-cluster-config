@@ -4,7 +4,7 @@ infrastructure:
     version: 0.0.5
     values:
       image: registry.redhat.io/rhel10/httpd-24:latest
-      roleArn: arn:aws:iam::899824977872:role/one-external-secret-store-test-app
+      roleArn: arn:aws:iam::489433848664:role/one-external-secret-store-test-app
       region: ap-southeast-2
       clustername: one
       awsSecretStore: one-test-app-secrets
@@ -15,7 +15,7 @@ infrastructure:
     values:
       csv: cluster-logging.v6.5.1
       clustername: one
-      roleArn: arn:aws:iam::899824977872:role/one-logging-cloudwatch-role
+      roleArn: arn:aws:iam::489433848664:role/one-logging-cloudwatch-role
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
@@ -25,7 +25,7 @@ infrastructure:
       channel: stable-2.6
       #csv: aap-operator.v2.4.0-0.1749069319
       csv: aap-operator.v2.6.0-0.1777410689
-      roleArn: arn:aws:iam::899824977872:role/one-aap-postgresql-database
+      roleArn: arn:aws:iam::489433848664:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-csi-common
     namespace: openshift-cluster-csi-drivers
@@ -36,7 +36,7 @@ infrastructure:
     values:
       csv: aws-efs-csi-driver-operator.v4.21.0-202606241858
       #csv: aws-efs-csi-driver-operator.v4.21.0-202606171954
-      roleArn: arn:aws:iam::899824977872:role/one-rosa-efs-csi-role
+      roleArn: arn:aws:iam::489433848664:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-smb
     namespace: openshift-cluster-csi-drivers
@@ -58,7 +58,7 @@ infrastructure:
       clustername: one
       region: ap-southeast-2
       csv: oadp-operator.v1.5.5
-      roleArn: arn:aws:iam::899824977872:role/one-openshift-oadp-operator
+      roleArn: arn:aws:iam::489433848664:role/one-openshift-oadp-operator
       bucketname: aap-backups
   - chart: openshift-pipelines
     namespace: openshift-pipelines
@@ -71,21 +71,21 @@ infrastructure:
     values:
       channel: stable-v1
       csv: openshift-external-secrets-operator.v1.1.0
-  #    roleArn: arn:aws:iam::899824977872:role/one-external-secret-operator
+  #    roleArn: arn:aws:iam::489433848664:role/one-external-secret-operator
   #- chart: cluster-monitoring
   #  namespace: openshift-monitoring
   #  version: 0.0.20
   #  values:
   #    region: ap-southeast-2
-  #    roleArn: arn:aws:iam::899824977872:role/one-rosa-monitoring-sns-role
-  #    topicArn: arn:aws:sns:ap-southeast-2:899824977872:one-rosa-monitoring-sns-topic
+  #    roleArn: arn:aws:iam::489433848664:role/one-rosa-monitoring-sns-role
+  #    topicArn: arn:aws:sns:ap-southeast-2:489433848664:one-rosa-monitoring-sns-topic
   #- chart: amazon-cloudwatch-observability
   #  namespace: amazon-cloudwatch
   #  version: 0.0.3
   #  values:
   #    clusterName: one
   #    region: ap-southeast-2
-  #    roleArn: arn:aws:iam::899824977872:role/one-logging-cloudwatch-role
+  #    roleArn: arn:aws:iam::489433848664:role/one-logging-cloudwatch-role
   - chart: overprovisioning
     namespace: overprovisioning
     version: 0.0.3
@@ -101,7 +101,7 @@ infrastructure:
     values:
       csv: cert-manager-operator.v1.20.0
       region: ap-southeast-2
-      roleArn: arn:aws:iam::899824977872:role/one-cert-manager-operator
+      roleArn: arn:aws:iam::489433848664:role/one-cert-manager-operator
   - chart: openshift-ingress
     namespace: openshift-ingress
     version: 0.0.17
