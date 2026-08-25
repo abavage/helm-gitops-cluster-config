@@ -70,7 +70,7 @@ infrastructure:
     version: 0.0.15
     values:
       channel: stable-v1
-      csv: openshift-external-secrets-operator.v1.1.0
+      csv: openshift-external-secrets-operator.v1.2.0
   #    roleArn: arn:aws:iam::489433848664:role/one-external-secret-operator
   #- chart: cluster-monitoring
   #  namespace: openshift-monitoring
