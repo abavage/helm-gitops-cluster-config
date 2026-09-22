@@ -34,7 +34,7 @@ infrastructure:
     namespace: openshift-cluster-csi-drivers
     version: 0.0.7
     values:
-      csv: aws-efs-csi-driver-operator.v4.21.0-202606241858
+      csv: aws-efs-csi-driver-operator.v4.22.0-202609081346
       #csv: aws-efs-csi-driver-operator.v4.21.0-202606171954
       roleArn: arn:aws:iam::242201308241:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
@@ -57,14 +57,14 @@ infrastructure:
     values:
       clustername: one
       region: ap-southeast-2
-      csv: oadp-operator.v1.5.5
+      csv: oadp-operator.v1.6.1
       roleArn: arn:aws:iam::242201308241:role/one-openshift-oadp-operator
       bucketname: aap-backups
   - chart: openshift-pipelines
     namespace: openshift-pipelines
     version: 0.0.1
     values:
-      csv: openshift-pipelines-operator-rh.v1.22.3
+      csv: openshift-pipelines-operator-rh.v1.23.2
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
     version: 0.0.15
