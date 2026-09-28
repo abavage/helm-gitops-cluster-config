@@ -11,7 +11,7 @@ infrastructure:
       awsSecretStoreProperty: rosa_api_token
   - chart: openshift-logging
     namespace: openshift-logging
-    version: 0.0.4
+    version: 0.0.5
     values:
       csv: cluster-logging.v6.5.1
       clustername: one
