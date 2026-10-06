@@ -4,7 +4,7 @@ infrastructure:
     version: 0.0.5
     values:
       image: registry.redhat.io/rhel10/httpd-24:latest
-      roleArn: arn:aws:iam::242201308241:role/one-external-secret-store-test-app
+      roleArn: arn:aws:iam::450471456866:role/one-external-secret-store-test-app
       region: ap-southeast-2
       clustername: one
       awsSecretStore: one-test-app-secrets
@@ -15,7 +15,7 @@ infrastructure:
     values:
       csv: cluster-logging.v6.5.1
       clustername: one
-      roleArn: arn:aws:iam::242201308241:role/one-logging-cloudwatch-role
+      roleArn: arn:aws:iam::450471456866:role/one-logging-cloudwatch-role
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
@@ -25,22 +25,22 @@ infrastructure:
       channel: stable-2.6
       #csv: aap-operator.v2.4.0-0.1749069319
       csv: aap-operator.v2.6.0-0.1777410689
-      roleArn: arn:aws:iam::242201308241:role/one-aap-postgresql-database
+      roleArn: arn:aws:iam::450471456866:role/one-aap-postgresql-database
       region: ap-southeast-2
   - chart: openshift-csi-common
     namespace: openshift-cluster-csi-drivers
     version: 0.0.1
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
-    version: 0.0.7
+    version: 0.0.8
     values:
       csv: aws-efs-csi-driver-operator.v4.22.0-202609081346
       #csv: aws-efs-csi-driver-operator.v4.21.0-202606171954
-      roleArn: arn:aws:iam::242201308241:role/one-rosa-efs-csi-role
+      roleArn: arn:aws:iam::450471456866:role/one-rosa-efs-csi-role
       #fileSystemId: fs-0dc57e7aaf331040d
   - chart: openshift-smb
     namespace: openshift-cluster-csi-drivers
-    version: 0.0.6
+    version: 0.0.7
     values:
       csv: smb-csi-driver-operator.v4.21.0-202606240914
       #csv: smb-csi-driver-operator.v4.21.0-202606152052
@@ -53,39 +53,39 @@ infrastructure:
   #      value: true
   - chart: openshift-oadp
     namespace: openshift-adp
-    version: 0.0.1
+    version: 0.0.2
     values:
       clustername: one
       region: ap-southeast-2
       csv: oadp-operator.v1.6.1
-      roleArn: arn:aws:iam::242201308241:role/one-openshift-oadp-operator
+      roleArn: arn:aws:iam::450471456866:role/one-openshift-oadp-operator
       bucketname: aap-backups
   - chart: openshift-pipelines
     namespace: openshift-pipelines
-    version: 0.0.1
+    version: 0.0.2
     values:
       csv: openshift-pipelines-operator-rh.v1.23.2
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
-    version: 0.0.15
+    version: 0.0.16
     values:
       channel: stable-v1
       csv: openshift-external-secrets-operator.v1.2.0
-  #    roleArn: arn:aws:iam::242201308241:role/one-external-secret-operator
+  #    roleArn: arn:aws:iam::450471456866:role/one-external-secret-operator
   - chart: cluster-monitoring
     namespace: openshift-monitoring
     version: 0.0.20
     values:
       region: ap-southeast-2
-      roleArn: arn:aws:iam::242201308241:role/one-rosa-monitoring-sns-role
-      topicArn: arn:aws:sns:ap-southeast-2:242201308241:one-rosa-monitoring-sns-topic
+      roleArn: arn:aws:iam::450471456866:role/one-rosa-monitoring-sns-role
+      topicArn: arn:aws:sns:ap-southeast-2:450471456866:one-rosa-monitoring-sns-topic
   #- chart: amazon-cloudwatch-observability
   #  namespace: amazon-cloudwatch
   #  version: 0.0.3
   #  values:
   #    clusterName: one
   #    region: ap-southeast-2
-  #    roleArn: arn:aws:iam::242201308241:role/one-logging-cloudwatch-role
+  #    roleArn: arn:aws:iam::450471456866:role/one-logging-cloudwatch-role
   - chart: overprovisioning
     namespace: overprovisioning
     version: 0.0.3
@@ -97,18 +97,18 @@ infrastructure:
           memory: 50Mi
   - chart: certificate-manager
     namespace: openshift-cert-manager-operator
-    version: 0.0.8
+    version: 0.0.9
     values:
       csv: cert-manager-operator.v1.20.0
       region: ap-southeast-2
-      roleArn: arn:aws:iam::242201308241:role/one-cert-manager-operator
+      roleArn: arn:aws:iam::450471456866:role/one-cert-manager-operator
   - chart: openshift-ingress
     namespace: openshift-ingress
     version: 0.0.17
     values:
       ingresscontroller:
-        - certificateCommonName: '*.sandbox213.opentlc.com'
-          domain: sandbox213.opentlc.com
+        - certificateCommonName: '*.sandbox627.opentlc.com'
+          domain: sandbox627.opentlc.com 
           name: apps
           scope: External
       #ingresscontroller:
