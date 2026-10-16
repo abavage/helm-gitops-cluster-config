@@ -11,7 +11,7 @@ infrastructure:
       awsSecretStoreProperty: rosa_api_token
   - chart: openshift-logging
     namespace: openshift-logging
-    version: 0.0.5
+    version: 0.0.6
     values:
       csv: cluster-logging.v6.5.3
       clustername: one
@@ -19,7 +19,7 @@ infrastructure:
       region: ap-southeast-2
   - chart: openshift-aap
     namespace: aap
-    version: 0.0.20
+    version: 0.0.21
     values:
       #channel: stable-2.4
       channel: stable-2.6
@@ -60,12 +60,12 @@ infrastructure:
       bucketname: aap-backups
   - chart: openshift-pipelines
     namespace: openshift-pipelines
-    version: 0.0.2
+    version: 0.0.4
     values:
       csv: openshift-pipelines-operator-rh.v1.24.1
   - chart: openshift-external-secrets
     namespace: external-secrets-operator
-    version: 0.0.16
+    version: 0.0.17
     values:
       channel: stable-v1.2
       csv: openshift-external-secrets-operator.v1.2.1
@@ -95,7 +95,7 @@ infrastructure:
           memory: 50Mi
   - chart: certificate-manager
     namespace: openshift-cert-manager-operator
-    version: 0.0.9
+    version: 0.0.10
     values:
       csv: cert-manager-operator.v1.20.1
       region: ap-southeast-2
