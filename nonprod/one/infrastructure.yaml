@@ -32,7 +32,7 @@ infrastructure:
   #  version: 0.0.1
   - chart: openshift-efs
     namespace: openshift-cluster-csi-drivers
-    version: 0.0.9
+    version: 0.0.10
     values:
       csv: aws-efs-csi-driver-operator.v4.22.0-202609300304
       roleArn: arn:aws:iam::070337994773:role/one-rosa-efs-csi-role
@@ -51,7 +51,7 @@ infrastructure:
   #      value: true
   - chart: openshift-oadp
     namespace: openshift-adp
-    version: 0.0.2
+    version: 0.0.3
     values:
       clustername: one
       region: ap-southeast-2
